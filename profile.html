@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Freelance Job Marketplace</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="#">Messages</a>
+                <a href="#">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="profile">
+        <div class="container">
+            <h2>Your Profile</h2>
+            <div class="profile-card">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <h3>[Freelancer Name]</h3>
+                <p><strong>Skills:</strong> Web Development, Graphic Design, Content Writing</p>
+                <p><strong>Location:</strong> New Delhi, India</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+            </div>
+            <div class="profile-edit">
+                <h3>Edit Profile</h3>
+                <form>
+                    <label for="profile-pic">Profile Picture:</label>
+                    <input type="file" id="profile-pic" name="profile-pic"><br><br>
+
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills" value="Web Development, Graphic Design, Content Writing"><br><br>
+
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" value="New Delhi, India"><br><br>
+
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freelance Job Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    // Example: Toggle Profile Edit Form
+    function toggleProfileEdit() {
+        var editForm = document.querySelector('.profile-edit');
+        editForm.style.display = editForm.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Example: Form Submission Alert
+    function submitForm(event) {
+        event.preventDefault();
+        alert('Form submitted successfully!');
+    }
+
+    // Attach event listeners
+    document.querySelector('form').addEventListener('submit', submitForm);
+</script>

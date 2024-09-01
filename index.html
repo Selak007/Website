@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Freelance Job Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Freelance Job Marketplace</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign Up</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Find the perfect freelance job for you</h2>
+            <p>Join our community and start working on amazing projects today.</p>
+            <button onclick="window.location.href='signup.html';">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Wide Range of Jobs</h3>
+                <p>Explore job opportunities in various industries.</p>
+            </div>
+            <div class="feature">
+                <h3>Secure Payments</h3>
+                <p>Get paid securely through our platform.</p>
+            </div>
+            <div class="feature">
+                <h3>Build Your Reputation</h3>
+                <p>Receive ratings and reviews from employers.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freelance Job Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script>
+    // Example: Toggle Profile Edit Form
+    function toggleProfileEdit() {
+        var editForm = document.querySelector('.profile-edit');
+        editForm.style.display = editForm.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Example: Form Submission Alert
+    function submitForm(event) {
+        event.preventDefault();
+        alert('Form submitted successfully!');
+    }
+
+    // Attach event listeners
+    document.querySelector('form').addEventListener('submit', submitForm);
+</script>
